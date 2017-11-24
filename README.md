@@ -1,1 +1,1 @@
-This repo is for learning purpose only
+This repo is for GIT learning purpose only
