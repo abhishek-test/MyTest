@@ -8,17 +8,17 @@ using namespace cv;
 
 int main()
 {
-	VideoCapture vid(0);
-	if(!vid.isOpened())
-	  { cout << " !! Error reading camera " << endl; return -1; }
+   VideoCapture vid(0);
+   if(!vid.isOpened())
+     { cout << " !! Error reading camera " << endl; return -1; }
 
-	Mat inputFrame;
+   Mat inputFrame;
 
-	while(1)
-	{
-		vid >> inputFrame;
-		laneTracking(inputFrame);
-		if(waitKey(30) == 27)
-			break;
-	}
+   while(1)
+   {
+	vid >> inputFrame;
+	laneTracking(inputFrame);
+	if(waitKey(30) == 27)
+		break;
+   }
 }
