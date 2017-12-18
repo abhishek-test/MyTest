@@ -6,6 +6,14 @@
 using namespace std;
 using namespace cv;
 
+
+void laneTracking(Mat inputFrame)
+{
+  int a = 0;
+}
+
+
+
 int main()
 {
    VideoCapture vid(0);
